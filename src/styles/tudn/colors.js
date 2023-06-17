@@ -1,5 +1,5 @@
 const colors = {
-    Interaction: "#079F70",
+    Interaction: "#324BAA",
     Secondary: "#298A6D",
     back: "#324BAA",
     modal: "#151515eb",

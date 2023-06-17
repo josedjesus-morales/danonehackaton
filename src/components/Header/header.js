@@ -1,19 +1,29 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Anchor from "../atoms/Anchor/index";
-import { HeaderStyles } from "./styles";
+import { HeaderStyles, HeaderWrapper, HeaderNav, HeaderNavItem } from "./styles";
 
 const Header = () => {
     return (
         <HeaderStyles id="Header" as="header">
-            <Anchor>
-            <Image
-                src="/logo.png"
-                width={192}
-                height={61}
-                alt="Picture of the author"
-                />
-            </Anchor>
+            <HeaderWrapper>
+                <Anchor href="#">
+                <Image
+                    src="/logo.png"
+                    width={192}
+                    height={61}
+                    alt="Logo"
+                    />
+                </Anchor>
+                <HeaderNav>
+                    <HeaderNavItem><Link href="#">Home</Link></HeaderNavItem>
+                    <HeaderNavItem><Link href="#">Products</Link></HeaderNavItem>
+                    <HeaderNavItem><Link href="#">Diary</Link></HeaderNavItem>
+                    <HeaderNavItem><Link href="#">Contact</Link></HeaderNavItem>
+                </HeaderNav>
+                
+            </HeaderWrapper>
         </HeaderStyles>
     );
 };

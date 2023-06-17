@@ -11,9 +11,33 @@ const HeaderStyles = styled.div(
         height: 93px;
     `,
 );
+const HeaderWrapper = styled.div(
+    () => css`
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1440px;
+    `,
+);
+const HeaderNav = styled.ul(
+    ({ theme }) => css`
+        list-style: none;
+        display: flex;
+        color:  ${theme.colors.Interaction};
+    `,
+);
+
+const HeaderNavItem = styled.li(
+    () => css`
+        margin: 1rem;
+    `,
+);
 
 
 export {
     HeaderStyles,
-    
+    HeaderWrapper,
+    HeaderNav,
+    HeaderNavItem
 };
