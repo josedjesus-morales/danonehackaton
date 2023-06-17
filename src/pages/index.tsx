@@ -46,27 +46,13 @@ const Home: FC<{
               rel="noopener noreferrer"
             >
               By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
+              asdsa
             </a>
           </div>
         </div>
 
         <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
+          asd
         </div>
 
         <div className={styles.grid}>
@@ -145,8 +131,8 @@ export const getServerSideProps = async () => {
     }
   );
 
-  const data: { products: any } = await hygraph.request(getPages());
-  console.log(products);
+  const data = await hygraph.request(getPages());
+  console.log(data);
 
   return {
     props: {
