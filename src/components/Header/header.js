@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <HeaderStyles id="Header" as="header">
             <HeaderWrapper>
-                <Anchor href="#">
+                <Anchor href="/">
                 <Image
                     src="/logo.png"
                     width={192}
@@ -17,8 +17,8 @@ const Header = () => {
                     />
                 </Anchor>
                 <HeaderNav>
-                    <HeaderNavItem><Link href="#">Home</Link></HeaderNavItem>
-                    <HeaderNavItem><Link href="#">Products</Link></HeaderNavItem>
+                    <HeaderNavItem><Link href="/">Home</Link></HeaderNavItem>
+                    <HeaderNavItem><Link href="/products">Products</Link></HeaderNavItem>
                     <HeaderNavItem><Link href="#">Diary</Link></HeaderNavItem>
                     <HeaderNavItem><Link href="#">Contact</Link></HeaderNavItem>
                 </HeaderNav>
