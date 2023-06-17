@@ -4,7 +4,7 @@ import styledMap from "../../../helpers/stylemap";
 import variants from "../../../helpers/variants";
 
 const common = ({ theme }) => css`
-    font-size: ${theme.fontSizes.fmd};
+    font-size: ${theme.fontSizes.fsm};
     font-family: ${theme.fonts[1]};
     min-height: 40px;
     min-width: 40px;
@@ -43,6 +43,7 @@ const Outline = ({ theme }) => css`
     ${common}
     background-color: ${props => (props.bg ? theme.colors[props.bg] : theme.colors.Light)};
     border: solid 2px ${theme.colors.Interaction};
+    color: ${theme.colors.Interaction};
 `;
 
 const Inactive = ({ theme }) => css`

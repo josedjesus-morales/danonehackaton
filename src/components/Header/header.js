@@ -24,8 +24,8 @@ const Header = () => {
                     <HeaderNavItem><Link href="#">Contact</Link></HeaderNavItem>
                 </HeaderNav>
                 <HeaderButtonWrapper>   
-                    <Button>Login</Button>
-                    <Button>Sign up</Button>
+                    <Button variant="Outline">Login</Button>
+                    <Button variant="Outline">Sign up</Button>
                 </HeaderButtonWrapper>
             </HeaderWrapper>
         </HeaderStyles>
