@@ -20,7 +20,7 @@ const Header = () => {
                 <HeaderNav>
                     <HeaderNavItem><Link href="/home">Home</Link></HeaderNavItem>
                     <HeaderNavItem><Link href="/products">Products</Link></HeaderNavItem>
-                    <HeaderNavItem><Link href="#">Diary</Link></HeaderNavItem>
+                    <HeaderNavItem><Link href="/users">Diary</Link></HeaderNavItem>
                     <HeaderNavItem><Link href="#">Contact</Link></HeaderNavItem>
                 </HeaderNav>
                 <HeaderButtonWrapper>   
