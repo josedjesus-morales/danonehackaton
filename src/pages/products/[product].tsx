@@ -3,6 +3,7 @@ import { FC } from "react";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "../../components/Header/header";
+import Footer from "../components/Footer/footer";
 import styles from "@/styles/Home.module.css";
 import { GraphQLClient } from "graphql-request";
 import { getPages } from "../../queries/pages";
@@ -33,6 +34,7 @@ const Home: FC<{
       </Head>
       <Header/>
         <div>productsos dinamicos</div>
+        <Footer/>
     </>
   );
 };
