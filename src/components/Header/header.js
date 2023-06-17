@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Anchor from "../atoms/Anchor/index";
-import { HeaderStyles, HeaderWrapper, HeaderNav, HeaderNavItem } from "./styles";
+import Button from "../atoms/Button/index"
+import { HeaderStyles, HeaderWrapper, HeaderNav, HeaderNavItem, HeaderButtonWrapper } from "./styles";
 
 const Header = () => {
     return (
@@ -17,12 +18,15 @@ const Header = () => {
                     />
                 </Anchor>
                 <HeaderNav>
-                    <HeaderNavItem><Link href="/">Home</Link></HeaderNavItem>
+                    <HeaderNavItem><Link href="/home">Home</Link></HeaderNavItem>
                     <HeaderNavItem><Link href="/products">Products</Link></HeaderNavItem>
                     <HeaderNavItem><Link href="#">Diary</Link></HeaderNavItem>
                     <HeaderNavItem><Link href="#">Contact</Link></HeaderNavItem>
                 </HeaderNav>
-                
+                <HeaderButtonWrapper>   
+                    <Button>Login</Button>
+                    <Button>Sign up</Button>
+                </HeaderButtonWrapper>
             </HeaderWrapper>
         </HeaderStyles>
     );

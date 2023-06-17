@@ -28,6 +28,14 @@ const HeaderNav = styled.ul(
     `,
 );
 
+const HeaderButtonWrapper = styled.div(
+    ({ theme }) => css`
+        display: flex;
+        width: 243px;
+        align-items: center;
+        justify-content: center;
+    `,
+);
 const HeaderNavItem = styled.li(
     () => css`
         margin: 1rem;
@@ -39,5 +47,6 @@ export {
     HeaderStyles,
     HeaderWrapper,
     HeaderNav,
-    HeaderNavItem
+    HeaderNavItem,
+    HeaderButtonWrapper
 };
