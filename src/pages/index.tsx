@@ -7,6 +7,7 @@ import Link from "next/link";
 import Header from "../components/Header/header";
 import { GraphQLClient } from "graphql-request";
 import { getPages } from "../queries/pages";
+import { getUsers } from "@/queries/users";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -133,6 +134,8 @@ export const getServerSideProps = async () => {
 
   const data = await hygraph.request(getPages());
   console.log(data);
+  const userData = await hygraph.request(getUsers());
+  console.log(userData);
 
   return {
     props: {
