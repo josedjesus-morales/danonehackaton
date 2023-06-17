@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import Header from "../components/Header/header";
+import Footer from "../components/Footer/footer";
 import { GraphQLClient } from "graphql-request";
 import { getPages } from "../queries/pages";
 import { getUsers } from "@/queries/users";
@@ -115,9 +116,7 @@ const Home: FC<{
           </a>
         </div>
       </main>
-      <footer className={`${styles.footer} ${inter.className}`}>
-        © 2023 - All rights reserved.
-      </footer>
+      <Footer/>
     </>
   );
 };

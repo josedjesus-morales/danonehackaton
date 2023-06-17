@@ -13,7 +13,7 @@ const colors = {
     gray4: "#808080",
     gray5: "#252525",
     graycataloge: "#60676C",
-    grayfooter: "#4a4a4a",
+    grayfooter: "#E8F3FF",
     darkfooter: "#121212",
     matchback: "#081610",
     textfooter: "#efefef",
