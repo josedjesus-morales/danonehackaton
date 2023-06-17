@@ -1,27 +1,39 @@
 export const getPages = () => `
   {
-    pages(where: {title: "Home"}) {
-      components {
-        ... on Grid {
+        products {
+          createdAt
           id
-          items {
-            ... on Card {
-              id
-              title
-              description
-            }
+          publishedAt
+          updatedAt
+          ean {
+            text
+          }
+          fats {
+            text
+          }
+          footprintCarbon {
+            text
+          }
+          footprintCo2 {
+            text
+          }
+          hc {
+            text
+          }
+          footprintEcological {
+            text
+          }
+          ingredients {
+            text
+          }
+          name {
+            text
+          }
+          description {
+            text
+          }
+          details {
+            text
           }
         }
-        ... on Stack {
-          id
-          items {
-            ... on Card {
-              id
-              title
-              description
-            }
-          }
-        }
-      }
-    }
   }`;
