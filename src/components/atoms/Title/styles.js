@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import variants from "../../helpers/variants";
+import variants from "../../../helpers/variants";
 
 const common = ({ theme }) => css`
     font-family: ${theme.fonts[1]};

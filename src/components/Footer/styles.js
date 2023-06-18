@@ -40,6 +40,7 @@ const FooterNavItem = styled.li(
     () => css`
         margin: 1rem;
         text-transform: uppercase;
+        font-size: 12px;
     `,
 );
 

@@ -4,13 +4,33 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import Box from "../components/atoms/Box/index";
+import Title from "../components/atoms/Title/index";
+import Text from "../components/atoms/Text/index";
+import Button from "../components/atoms/Button/index";
+import Image from "next/image";
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/footer";
 import { GraphQLClient } from "graphql-request";
 import { getPages } from "../queries/pages";
 import { getUsers } from "@/queries/users";
+import styled, { css } from "styled-components";
+
 
 const inter = Inter({ subsets: ["latin"] });
+
+
+const BoxWrapper = styled(Box)(
+    ({ theme }) => css`
+        background-color: ${theme.colors.Interaction};
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        min-height: 300px;
+    `,
+);
 
 const Home: FC<{
   // grid: {
@@ -35,86 +55,18 @@ const Home: FC<{
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              asdsa
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          asd
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+      <main >
+      <Image
+        src="/recipes.png"
+        width={1440}
+        height={370}
+        alt="recipes"
+      />
+      <BoxWrapper>
+        <Title as="h2">Keep track of your daily calorie limit!</Title>
+        <Text size={18}>Tell us your maximum daily calorie intake and we will recommend the products that best suit your goals!</Text>
+        <Button variant="Outline">Start now</Button>
+      </BoxWrapper>
       </main>
       <Footer/>
     </>

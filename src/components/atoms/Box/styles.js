@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
-import styledMap from "../../helpers/stylemap";
-import variants from "../../helpers/variants";
+import styledMap from "../../../helpers/stylemap";
+import variants from "../../../helpers/variants";
 
 const common = ({ theme }) => css`
     width: ${props => (props.w ? props.w : "100%")};
