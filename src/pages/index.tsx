@@ -2,8 +2,6 @@
 import { FC } from "react";
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import Link from "next/link";
 import Box from "../components/atoms/Box/index";
 import Title from "../components/atoms/Title/index";
 import Text from "../components/atoms/Text/index";
