@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const BoxWrapper = styled(Box)(
   ({ theme }) => css`
-      background-color: ${theme.colors.Interaction};
+      background-color: ${theme.colors.gray3};
       display:flex;
       justify-content: space-around;
       align-items: center;
@@ -58,12 +58,14 @@ const Home: FC<{
       <Header/>
         <MainWrapper>
           <Title as="h2">Welcome to your diary!</Title>
-          <BoxWrapper>
-          <Text>Your maximum kcal limit</Text>
-          </BoxWrapper>
-          <BoxWrapper>
-          dairy
-          </BoxWrapper>
+          <Box variant="Flex">
+            <BoxWrapper>
+            <Text>Your maximum kcal limit</Text>
+            </BoxWrapper>
+            <BoxWrapper>
+            dairy
+            </BoxWrapper>
+          </Box>
         </MainWrapper>
         <Footer/>
     </>
