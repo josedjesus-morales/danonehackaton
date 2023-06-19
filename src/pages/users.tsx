@@ -8,6 +8,8 @@ import Footer from "../components/Footer/footer";
 import { GraphQLClient } from "graphql-request";
 import { getPages } from "../queries/pages";
 import styled, { css } from "styled-components";
+import Title from "@/components/atoms/Title/styles";
+import Text from "../components/atoms/Text";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +29,7 @@ const MainWrapper = styled.main(
   () => css`
       display:flex;
       justify-content: center;
+      flex-wrap: wrap;
   `,
 );
 
@@ -54,8 +57,9 @@ const Home: FC<{
       </Head>
       <Header/>
         <MainWrapper>
+          <Title as="h2">Welcome to your diary!</Title>
           <BoxWrapper>
-          dairy
+          <Text>Your maximum kcal limit</Text>
           </BoxWrapper>
           <BoxWrapper>
           dairy
